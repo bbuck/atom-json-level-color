@@ -1,0 +1,20 @@
+@import "json-level-color-variables.less";
+
+.recurse-level-colors(@colors, @max-levels, @level: 0) when (@level < @max-levels) {
+  @i: mod(@level, length(@colors)) + 1;
+  .meta.structure.dictionary.json:not(.value) {
+    & > .string.quoted.json {
+	     color: extract(@colors, @i);
+    }
+
+    .value.json {
+      .recurse-level-colors(@colors, @max-levels, @level + 1);
+    }
+  }
+}
+
+atom-text-editor::shadow {
+  .source.json {
+    .recurse-level-colors(@defined-colors, @depth);
+  }
+}
