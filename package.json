@@ -1,0 +1,16 @@
+{
+  "name": "json-level-color",
+  "description": "Provider customizable colors per level of a JSON object",
+  "version": "0.0.0",
+  "engines": {
+    "atom": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbuck/atom-json-level-color"
+  },
+  "issues": {
+    "url": "https://github.com/bbuck/atom-json-level-color/issues"
+  },
+  "license": "MIT"
+}
