@@ -2,9 +2,9 @@
   "name": "json-level-color",
   "description": "Provide customizable colors per level of a JSON object",
   "main": "./lib/json-level-color",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "engines": {
-    "atom": "<1.13.0"
+    "atom": ">=1.13.0"
   },
   "repository": {
     "type": "git",
